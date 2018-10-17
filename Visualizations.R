@@ -26,4 +26,4 @@ bad$state
 dfMerged <- dfMerged[dfMerged$center$x > -125, ]
 dfMerged$center$x
 
-map.popCircle <- map.popColor + geom_point(aes(x =center$x, y = center$y))
+map.popCircle <- map.popColor + geom_point(aes(x =dfMerged$center$x, y = dfMerged$center$y))
