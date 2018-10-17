@@ -3,22 +3,22 @@ library(ggplot2)
 library(ggmap)
 us <- map_data("state")
 dfMerged$state <- tolower(state.name)
-dfMerged <- dfMerged[dfMerged$center$x > -125, ]
+"dfMerged <- dfMerged[dfMerged$center$x > -125, ]"
 str(dfMerged)
 
-map.simple <- ggplot(dfMerged, aes(map_id = stateName))
+map.simple <- ggplot(dfMerged, aes(map_id = name))
 map.simple <- map.simple + geom_map(map = us, fill="white", color="black")
 map.simple <- map.simple + expand_limits(x=us$long, y =us$lat)
 map.simple <- map.simple + coord_map() + ggtitle("Basic Map of continental USA")
 
 
-map.popColor <- ggplot(dfMerged, aes(map_id = stateName))
+map.popColor <- ggplot(dfMerged, aes(map_id = name))
 map.popColor <- map.popColor + geom_map(map = us, aes(fill = area))
 map.popColor <- map.popColor + expand_limits(x = us$long, y= us$lat)
 map.popColor <- map.popColor + coord_map() + ggtitle("State Population")
 
 
-map.murder <- ggplot(dfMerged, aes(map_id = stateName))
+map.murder <- ggplot(dfMerged, aes(map_id = name))
 map.murder <- map.murder + geom_map(map = us, aes(fill = Murder))
 map.murder <- map.murder + expand_limits(x = us$long, y= us$lat)
 map.murder <- map.murder + coord_map() + ggtitle("State Murderrate")
