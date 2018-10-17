@@ -28,7 +28,7 @@
         {
             "ports": [
                 {
-                    "input": "dfMerged",
+                    "input": "Merged",
                     "output": "dfMerged",
                     "type": "r_obj"
                 }
@@ -53,10 +53,12 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "ljzeugne",
             "desc": "",
-            "name": "ExpandDataframe.R"
+            "name": "ExpandDataframe.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-17 16:17:45",
+    "updated_at": "2018-10-17 16:20:40",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
