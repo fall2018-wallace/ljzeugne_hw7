@@ -1,3 +1,4 @@
 
 dfMerged$area <- state.name
-str(dfMerged)
+dfMerged$center <- state.center
+
