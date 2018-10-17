@@ -28,7 +28,7 @@
         {
             "ports": [
                 {
-                    "input": "Merged",
+                    "input": "dfMerged",
                     "output": "dfMerged",
                     "type": "r_obj"
                 }
@@ -59,6 +59,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-17 16:22:43",
+    "updated_at": "2018-10-17 16:23:27",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
