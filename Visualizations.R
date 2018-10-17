@@ -21,4 +21,4 @@ map.murder <- map.murder + geom_map(map = us, aes(fill = Murder))
 map.murder <- map.murder + expand_limits(x = us$long, y= us$lat)
 map.murder <- map.murder + coord_map() + ggtitle("State Murderrate")
 
-map.popCircle <- map.popColor + geom_point(aes(x =-100, y = 30))
+map.popCircle <- map.popColor + geom_point(aes(x =center$x, y = center$y))
