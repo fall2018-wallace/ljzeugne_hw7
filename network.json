@@ -21,7 +21,7 @@
                     "type": "csv"
                 }
             ],
-            "source": "scprc_est_2017_18_pop_res.csv.csv",
+            "source": "scprc_est_2017_18_pop_res.csv",
             "target": "clean.R"
         }
     ],
@@ -38,9 +38,9 @@
             "name": "data.csv"
         },
         {
-            "name": "scprc_est_2017_18_pop_res.csv.csv"
+            "name": "scprc_est_2017_18_pop_res.csv"
         }
     ],
-    "updated_at": "2018-10-17 16:04:59",
+    "updated_at": "2018-10-17 16:05:54",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
