@@ -22,6 +22,6 @@ map.murder <- map.murder + expand_limits(x = us$long, y= us$lat)
 map.murder <- map.murder + coord_map() + ggtitle("State Murderrate")
 
 
-bad <- dfMerged[dfMerged$center$x < -120, ]
+bad <- dfMerged[dfMerged$center$x < -130, ]
 bad
 map.popCircle <- map.popColor + geom_point(aes(x =center$x, y = center$y))
