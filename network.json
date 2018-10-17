@@ -17,9 +17,6 @@
     ],
     "nodes": [
         {
-            "name": "raw_data.csv"
-        },
-        {
             "assigned_to": "ljzeugne",
             "name": "clean.R",
             "task_status": "in progress"
@@ -28,6 +25,6 @@
             "name": "scprc_est_2017_18_pop_res.csv"
         }
     ],
-    "updated_at": "2018-10-17 16:06:47",
+    "updated_at": "2018-10-17 16:06:54",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
