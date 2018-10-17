@@ -7,22 +7,17 @@
         {
             "ports": [
                 {
-                    "input": "raw_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "raw_data.csv",
-            "target": "clean.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "clean_data",
                     "type": "csv"
                 }
             ],
             "source": "clean.R",
             "target": "data.csv"
+        },
+        {
+            "ports": [],
+            "source": "scprc_est_2017_18_pop_res.csv.csv",
+            "target": "clean.R"
         }
     ],
     "nodes": [
@@ -30,7 +25,9 @@
             "name": "raw_data.csv"
         },
         {
-            "name": "clean.R"
+            "assigned_to": "ljzeugne",
+            "name": "clean.R",
+            "task_status": "in progress"
         },
         {
             "name": "data.csv"
@@ -39,6 +36,6 @@
             "name": "scprc_est_2017_18_pop_res.csv.csv"
         }
     ],
-    "updated_at": "2018-10-17 16:01:31",
+    "updated_at": "2018-10-17 16:04:18",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
