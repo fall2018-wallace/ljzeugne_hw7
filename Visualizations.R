@@ -20,3 +20,8 @@ map.murder <- ggplot(dfMerged, aes(map_id = state))
 map.murder <- map.murder + geom_map(map = us, aes(fill = Murder))
 map.murder <- map.murder + expand_limits(x = us$long, y= us$lat)
 map.murder <- map.murder + coord_map() + ggtitle("State Murderrate")
+
+map.popCircle <- ggplot(dfMerged, aes(map_id = state))
+map.popCircle <- map.popCircle + geom_map(map = us, aes(fill = area))
+map.popCircle <- map.popCircle + expand_limits(x = us$long, y= us$lat)
+map.popCircle <- map.popCircle + coord_map() + ggtitle("State Population")
