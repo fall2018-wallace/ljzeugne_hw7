@@ -13,6 +13,17 @@
             ],
             "source": "scprc_est_2017_18_pop_res.csv",
             "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "census",
+                    "output": "cleanCensus",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "MergedArrest.R"
         }
     ],
     "nodes": [
@@ -25,10 +36,12 @@
             "name": "scprc_est_2017_18_pop_res.csv"
         },
         {
+            "assigned_to": "ljzeugne",
             "desc": "",
-            "name": "MergedArrest.R"
+            "name": "MergedArrest.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-17 16:07:47",
+    "updated_at": "2018-10-17 16:08:45",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
