@@ -10,6 +10,6 @@ rownames(Arrest) <- NULL
 #add a new column to the dataframe
 dfArrest <- cbind(stateName,Arrest)
 #Merge the USArrest dataset with census dataset based on state name
-dfMerged <- merge(Arrest, census, by= "stateName")
+dfMerged <- merge(dfArrest, census, by= "stateName")
 str(dfMerged)
  
