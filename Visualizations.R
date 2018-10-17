@@ -12,3 +12,4 @@ map.simple <- map.simple + expand_limits(x=us$long, y =us$lat)
 map.simple <- map.simple + coord_map() + ggtitle("Basic Map of continental USA")
 
 map.popColor <- ggplot(dfMerged, aes(map_id = state))
+map.popColor <- map.popColor + geom_map(map= us, aes(fill = population))
