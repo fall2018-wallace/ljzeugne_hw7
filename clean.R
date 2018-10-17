@@ -1,5 +1,6 @@
 
 #re-use the code from before
+str(raw_data)
 
 readStates <- function(states)
 {
