@@ -70,10 +70,15 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "ljzeugne",
             "desc": "",
-            "name": "Visualizations.R"
+            "name": "Visualizations.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "Map.png"
         }
     ],
-    "updated_at": "2018-10-17 16:32:14",
+    "updated_at": "2018-10-17 17:08:56",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
