@@ -46,6 +46,16 @@
             ],
             "source": "ExpandDataframe.R",
             "target": "Visualizations.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.simple",
+                    "type": "png"
+                }
+            ],
+            "source": "Visualizations.R",
+            "target": "Map.png"
         }
     ],
     "nodes": [
@@ -79,6 +89,6 @@
             "name": "Map.png"
         }
     ],
-    "updated_at": "2018-10-17 17:08:56",
+    "updated_at": "2018-10-17 17:09:16",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
