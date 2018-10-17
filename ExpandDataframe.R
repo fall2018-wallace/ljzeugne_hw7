@@ -1,2 +1,2 @@
 
-str(dfMerged)
+dfMerged$area <- state.name
