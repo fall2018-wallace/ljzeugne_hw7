@@ -57,8 +57,12 @@
             "desc": "",
             "name": "ExpandDataframe.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "",
+            "name": "Visualizations.R"
         }
     ],
-    "updated_at": "2018-10-17 16:23:27",
+    "updated_at": "2018-10-17 16:31:54",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
