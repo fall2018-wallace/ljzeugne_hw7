@@ -35,6 +35,17 @@
             ],
             "source": "MergedArrest.R",
             "target": "ExpandDataframe.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "dfMerged",
+                    "output": "dfMerged",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "ExpandDataframe.R",
+            "target": "Visualizations.R"
         }
     ],
     "nodes": [
@@ -63,6 +74,6 @@
             "name": "Visualizations.R"
         }
     ],
-    "updated_at": "2018-10-17 16:31:54",
+    "updated_at": "2018-10-17 16:32:14",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
