@@ -1,4 +1,4 @@
 
 library(ggplot2)
 library(ggmap)
-us <- map-data("state")
+us <- map_data("state")
