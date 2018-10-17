@@ -3,7 +3,7 @@ library(ggplot2)
 library(ggmap)
 us <- map_data("state")
 dfMerged$state <- tolower(state.name)
-"dfMerged <- dfMerged[dfMerged$center$x > -125, ]"
+dfMerged <- dfMerged[dfMerged$center$x > -125, ]
 str(dfMerged)
 
 map.simple <- ggplot(dfMerged, aes(map_id = name))
@@ -23,5 +23,5 @@ map.murder <- map.murder + geom_map(map = us, aes(fill = Murder))
 map.murder <- map.murder + expand_limits(x = us$long, y= us$lat)
 map.murder <- map.murder + coord_map() + ggtitle("State Murderrate")
 
-
-map.popCircle <- map.popColor + geom_point(aes(x =dfMerged$center$x, y = dfMerged$center$y))
+dfMerged <- dfMerged[dfMerged$center$x > -125, ]
+map.popCircle <- geom_point(data = dfMerged, aes(x=dfMerged$center$x, y = dfMerged$center$y), shape = 1)
