@@ -34,8 +34,11 @@
         },
         {
             "name": "data.csv"
+        },
+        {
+            "name": "scprc_est_2017_18_pop_res.csv.csv"
         }
     ],
-    "updated_at": "2018-10-17 16:00:24",
+    "updated_at": "2018-10-17 16:01:31",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
