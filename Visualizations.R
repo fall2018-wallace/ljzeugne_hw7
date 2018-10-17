@@ -5,3 +5,9 @@ us <- map_data("state")
 dfMerged$state <- tolower(state.name)
 dfMerged$area <- NULL
 str(dfMerged)
+
+map.simple <- ggplot(df Merged, aes(map_id = state))
+map.simple <- map.simple + geom_map(map = us, fill="white", color="black")
+map.simple <- map.simple + expand_limits(x=us$long, y =us$lat)
+map.simple <- map.simple + coord_map() + ggtitle("Basic Map of continental USA")
+map.simple
