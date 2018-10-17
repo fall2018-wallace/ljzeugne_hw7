@@ -24,6 +24,17 @@
             ],
             "source": "clean.R",
             "target": "MergedArrest.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "census",
+                    "output": "census",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "MergedArrest.R",
+            "target": "Visualizations.R"
         }
     ],
     "nodes": [
@@ -46,6 +57,6 @@
             "name": "Visualizations.R"
         }
     ],
-    "updated_at": "2018-10-17 16:10:19",
+    "updated_at": "2018-10-17 16:10:42",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
