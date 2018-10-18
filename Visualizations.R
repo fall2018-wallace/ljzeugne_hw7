@@ -11,8 +11,7 @@ map.simple <- map.simple + geom_map(map = us, fill="white", color="black")
 map.simple <- map.simple + expand_limits(x=us$long, y =us$lat)
 map.simple <- map.simple + coord_map() + ggtitle("Basic Map of continental USA")
 
-
-
+"Create a color coded map, based on the area of the state" 
 
 
 
