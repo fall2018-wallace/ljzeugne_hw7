@@ -90,7 +90,7 @@
         {
             "ports": [
                 {
-                    "output": "map.northeast",
+                    "output": "map.northeastcircle",
                     "type": "png"
                 }
             ],
@@ -141,6 +141,6 @@
             "name": "Northeast.png"
         }
     ],
-    "updated_at": "2018-10-18 02:00:33",
+    "updated_at": "2018-10-18 02:33:35",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
