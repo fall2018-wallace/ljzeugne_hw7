@@ -5,7 +5,7 @@ us <- map_data("state")
 dfMerged$state <- tolower(state.name)
 
 
-map.simple <- ggplot(dfMerged, aes(map_id = state))
+"map.simple <- ggplot(dfMerged, aes(map_id = state))
 map.simple <- map.simple + geom_map(map = us, fill="white", color="black")
 map.simple <- map.simple + expand_limits(x=us$long, y =us$lat)
 map.simple <- map.simple + coord_map() + ggtitle("Basic Map of continental USA")
@@ -22,6 +22,6 @@ map.murder <- map.murder + geom_map(map = us, aes(fill = Murder))
 map.murder <- map.murder + expand_limits(x = us$long, y= us$lat)
 map.murder <- map.murder + coord_map() + ggtitle("State Murderrate")
 
-"dfMerged <- dfMerged[dfMerged$center$x > -125, ]"
+"dfMerged <- dfMerged[dfMerged$center$x > -125, ]""
 
 
