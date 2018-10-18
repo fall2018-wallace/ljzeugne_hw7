@@ -17,14 +17,14 @@ map.simple <- map.simple + coord_map() + ggtitle("Basic Map of continental USA")
 map.popColor <- ggplot(dfMerged, aes(map_id= state))
 map.popColor <- map.popColor + geom_map(map = us, aes(fill= population))
 map.popColor <- map.popColor + expand_limits(x=us$long, y=us$lat)
-map.popColor <- map.popColor + coord_map() + ggtitle("State Population")
+map.popColor <- map.popColor + coord_map() + ggtitle("United States color-coded by Population")
 
 "Step C"
 "Create a color coded map, based on the murderrate of the state"
 map.popMurder <- ggplot(dfMerged, aes(map_id= state))
 map.popMurder <- map.popMurder + geom_map(map = us, aes(fill= Murder))
 map.popMurder <- map.popMurder + expand_limits(x=us$long, y=us$lat)
-map.popMurder <- map.popMurder + coord_map() + ggtitle("State Murderrate")
+map.popMurder <- map.popMurder + coord_map() + ggtitle("United States color-coded by Murderrate")
 
 "Take out the dots of Alaska and Hawai as they dont appear on the Map"
 newMerged <- dfMerged[dfMerged$x > -125, ]
