@@ -26,4 +26,4 @@ map.popMurder <- map.popMurder + expand_limits(x=us$long, y=us$lat)
 map.popMurder <- map.popMurder + coord_map() + ggtitle("State Murderrate")
 
 
-map.popCircle <- map.simple + geom_point(data=dfMerged, aes(x=dfMerged$x, y=dfMerged$y), shape = dfMerged$population)
+map.popCircle <- map.simple + geom_point(data=dfMerged, aes(x=dfMerged$x, y=dfMerged$y), shape = 1)
