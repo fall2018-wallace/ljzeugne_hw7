@@ -5,7 +5,7 @@ us <- map_data("state")
 dfMerged$state <- tolower(state.name)
 
 
-str(Merged)
+str(dfMerged)
 
 
 
