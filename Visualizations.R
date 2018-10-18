@@ -36,6 +36,7 @@ map.popCircle <- map.simple + geom_point(data=newMerged, aes(x=newMerged$x, y=ne
 NYClat <- 43
 NYCLong <- -73
 bb <- make_bbox(lon=NYCLong, lat=NYClat, f=0.05)
+ggmap(us)+xlim(NYClong) + ylim(NYClat)
 
 
 
