@@ -42,5 +42,5 @@ map.northeastcircle <- map.northeast + geom_point(data=newMerged, aes(x=newMerge
 
 
 "Create a Map of the North East with Circles based on population size"
-map.northeast <- map.northeast + aes(fill = population)
+map.northeastpopulation <- map.northeast + aes(fill = population)
 
