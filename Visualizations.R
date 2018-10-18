@@ -18,10 +18,10 @@ map.popColor <- map.popColor + expand_limits(x=us$long, y=us$lat)
 map.popColor <- map.popColor + coord_map() + ggtitle("State Population")
 
 "Create a color coded map, based on the murderrate of the state"
-map.popColor <- ggplot(dfMerged, aes(map_id= state))
-map.popColor <- map.popColor + geom_map(map = us, aes(fill= Murder))
-map.popColor <- map.popColor + expand_limits(x=us$long, y=us$lat)
-map.popColor <- map.popColor + coord_map() + ggtitle("State Population")
+map.popMurder <- ggplot(dfMerged, aes(map_id= state))
+map.popMurder <- map.popMurder + geom_map(map = us, aes(fill= Murder))
+map.popMurder <- map.popMurder + expand_limits(x=us$long, y=us$lat)
+map.popMurder <- map.popMurder + coord_map() + ggtitle("State Murderrate")
 
 
 
