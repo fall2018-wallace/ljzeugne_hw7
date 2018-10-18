@@ -29,6 +29,7 @@ map.popMurder <- map.popMurder + coord_map() + ggtitle("State Murderrate")
 "Take out the dots of Alaska and Hawai as they dont appear on the Map"
 newMerged <- dfMerged[dfMerged$x > -125, ]
 
+"Step C"
 "Create Maps with circle in state center and circle sized based on population"
 map.popCircle <- map.simple + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population, color="red", fill="red"), shape = 1)
 
