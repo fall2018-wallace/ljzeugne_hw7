@@ -32,18 +32,13 @@ newMerged <- dfMerged[dfMerged$x > -125, ]
 map.popCircle <- map.simple + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population), shape = 1)
 
 "Create a Map of the North East"
-
 NYClat <- 43
 NYCLong <- -73
-bb <- make_bbox(lon=NYCLong, lat=NYClat, f=0.05)
-us<- get_map("states")
-ggmap(us)+xlim(NYClong) + ylim(NYClat)
-
 
 
 map.northeast <- ggplot(newMerged, aes(map_id = state))
 map.northeast <- map.northeast + geom_map(map = us, fill="white", color="black")
-map.northeast <- map.northeast + expand_limits(x=-75 , y =43)
+map.northeast <- map.northeast + expand_limits(x=us$long, y=us$lat)
 map.northeast <- map.northeast + coord_map() + ggtitle("Map of Northeast")
 
 
