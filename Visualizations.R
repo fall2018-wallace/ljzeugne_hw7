@@ -40,3 +40,5 @@ map.northeast <- map.northeast + expand_limits(x=us$long, y=us$lat)
 map.northeast <- map.northeast + coord_map() + ggtitle("Map of Northeast") + xlim(-83,-60) + ylim(33,50)
 map.northeastcircle <- map.northeast + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population), shape = 1)
 
+
+"Create a Map of the North East filled based on murderrate"
