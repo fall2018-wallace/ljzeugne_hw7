@@ -39,6 +39,12 @@ NYClat <- newMerged$x[30]- 10
 NYClong <- newMerged$y[30]- 10
 
 "Step D"
+
+map.popColor1 <- ggplot(newMerged, aes(map_id= state))
+map.popColor1 <- map.popColor1 + geom_map(map = us, aes(fill= population))
+map.popColor1 <- map.popColor1 + expand_limits(x=us$long, y=us$lat)
+map.popColor1 <- map.popColor1 + coord_map() + ggtitle("State Population") + xlim(NYClat,-60) + ylim(NYClong,50) 
+
 "Create a Map of the North East with Circles based on population size"
 map.northeast <- ggplot(newMerged, aes(map_id = state))
 map.northeast <- map.northeast + geom_map(map = us, fill="white", color="black")
