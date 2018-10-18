@@ -96,16 +96,6 @@
             ],
             "source": "Visualizations.R",
             "target": "Northeast.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "map.northeastpopulation",
-                    "type": "png"
-                }
-            ],
-            "source": "Visualizations.R",
-            "target": "northeastpop.png"
         }
     ],
     "nodes": [
@@ -149,11 +139,8 @@
         },
         {
             "name": "Northeast.png"
-        },
-        {
-            "name": "northeastpop.png"
         }
     ],
-    "updated_at": "2018-10-18 02:36:52",
+    "updated_at": "2018-10-18 02:37:14",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
