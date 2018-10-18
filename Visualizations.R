@@ -34,6 +34,7 @@ map.popCircle <- map.simple + geom_point(data=newMerged, aes(x=newMerged$x, y=ne
 "Create a Map of the North East with Circles based on population size"
 
 NY <- newMerged$state[30]
+NY
 NYClat <- newMerged$x[32]
 NYClat
 NYCLong <- -73
