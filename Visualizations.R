@@ -33,6 +33,8 @@ map.popCircle <- map.simple + geom_point(data=newMerged, aes(x=newMerged$x, y=ne
 
 "Create a Map of the North East"
 
+
+
 map.northeast <- ggplot(newMerged, aes(map_id = state))
 map.northeast <- map.northeast + geom_map(map = us, fill="white", color="black")
 map.northeast <- map.northeast + expand_limits(x=-75 , y =43)
