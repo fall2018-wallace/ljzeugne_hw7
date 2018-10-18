@@ -32,6 +32,7 @@ newMerged <- dfMerged[dfMerged$x > -125, ]
 "Step C"
 "Create Maps with circle in state center and circle sized based on population"
 map.popCircle <- map.simple + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population, color="red", fill="red"), shape = 1)
+map.popCircle <- map.popCircle + ggtitle("United States with points based on Population")
 
 "Query long and lat of center of New York"
 NY <- newMerged$state[30]
@@ -43,19 +44,19 @@ NYClong <- newMerged$y[30]- 10
 map.popColor1 <- ggplot(newMerged, aes(map_id= state))
 map.popColor1 <- map.popColor1 + geom_map(map = us, aes(fill= population))
 map.popColor1 <- map.popColor1 + expand_limits(x=us$long, y=us$lat)
-map.popColor1 <- map.popColor1 + coord_map() + ggtitle("State Population") + xlim(NYClat,-60) + ylim(NYClong,50) 
+map.popColor1 <- map.popColor1 + coord_map() + ggtitle("Northeast of United States by Population") + xlim(NYClat,-60) + ylim(NYClong,50) 
 
 map.popmurder1 <- ggplot(newMerged, aes(map_id= state))
 map.popmurder1 <- map.popmurder1 + geom_map(map = us, aes(fill= Murder))
 map.popmurder1<- map.popmurder1 + expand_limits(x=us$long, y=us$lat)
-map.popmurder1 <- map.popmurder1 + coord_map() + ggtitle("State Population") + xlim(NYClat,-60) + ylim(NYClong,50) 
+map.popmurder1 <- map.popmurder1 + coord_map() + ggtitle("Northeast of United States by Murderrate") + xlim(NYClat,-60) + ylim(NYClong,50) 
 
 
 "Create a Map of the North East with Circles based on population size"
 map.northeast <- ggplot(newMerged, aes(map_id = state))
 map.northeast <- map.northeast + geom_map(map = us, fill="white", color="black")
 map.northeast <- map.northeast + expand_limits(x=us$long, y=us$lat)
-map.northeast <- map.northeast + coord_map() + ggtitle("Map of Northeast") + xlim(NYClat,-60) + ylim(NYClong,50)
+map.northeast <- map.northeast + coord_map() + ggtitle("Northeast of United States with Population points") + xlim(NYClat,-60) + ylim(NYClong,50)
 map.northeastcircle <- map.northeast + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population, color="red", fill="red"), shape = 1)
 
 
