@@ -66,6 +66,16 @@
             ],
             "source": "Visualizations.R",
             "target": "Population.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.popMurder",
+                    "type": "png"
+                }
+            ],
+            "source": "Visualizations.R",
+            "target": "Murder.png"
         }
     ],
     "nodes": [
@@ -105,6 +115,6 @@
             "name": "Murder.png"
         }
     ],
-    "updated_at": "2018-10-18 01:21:55",
+    "updated_at": "2018-10-18 01:22:12",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
