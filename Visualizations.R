@@ -34,7 +34,8 @@ map.popCircle <- map.simple + geom_point(data=newMerged, aes(x=newMerged$x, y=ne
 "Create a Map of the North East"
 
 NYClat <- -75
-NYC Long <- 43
+NYCLong <- 43
+bb <- make_bbox(lon=N)
 
 
 
