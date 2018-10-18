@@ -1,6 +1,7 @@
 
 library(ggplot2)
 library(ggmap)
+library(RColorBrewer)
 us <- map_data("state")
 dfMerged$state <- tolower(state.name)
 str(dfMerged)
