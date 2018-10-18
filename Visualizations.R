@@ -35,7 +35,7 @@ map.popCircle <- map.simple + geom_point(data=newMerged, aes(x=newMerged$x, y=ne
 
 NY <- newMerged$state[30]
 NY
-NYClat <- newMerged$x[32]
+NYClat <- newMerged$x[30]
 NYClat
 NYCLong <- -73
 map.northeast <- ggplot(newMerged, aes(map_id = state))
