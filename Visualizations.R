@@ -31,7 +31,7 @@ newMerged <- dfMerged[dfMerged$x > -125, ]
 
 "Step C"
 "Create Maps with circle in state center and circle sized based on population"
-map.popCircle <- map.simple + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population, color="red", fill="red"), shape = 1)
+map.popCircle <- map.simple + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population, color="red"), shape = 1)
 map.popCircle <- map.popCircle + ggtitle("United States with points based on Population")
 
 "Query long and lat of center of New York"
@@ -57,7 +57,7 @@ map.northeast <- ggplot(newMerged, aes(map_id = state))
 map.northeast <- map.northeast + geom_map(map = us, fill="white", color="black")
 map.northeast <- map.northeast + expand_limits(x=us$long, y=us$lat)
 map.northeast <- map.northeast + coord_map() + ggtitle("Northeast of United States with Population points") + xlim(NYClat,-60) + ylim(NYClong,50)
-map.northeastcircle <- map.northeast + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population, color="red", fill="red"), shape = 1)
+map.northeastcircle <- map.northeast + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population, color="red"), shape = 1)
 
 
 
