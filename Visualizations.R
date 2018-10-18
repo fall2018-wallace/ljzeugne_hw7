@@ -38,6 +38,7 @@ NY <- newMerged$state[30]
 NYClat <- newMerged$x[30]- 10
 NYClong <- newMerged$y[30]- 10
 
+"Step D"
 "Create a Map of the North East with Circles based on population size"
 map.northeast <- ggplot(newMerged, aes(map_id = state))
 map.northeast <- map.northeast + geom_map(map = us, fill="white", color="black")
