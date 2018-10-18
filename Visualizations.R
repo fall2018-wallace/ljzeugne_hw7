@@ -12,7 +12,6 @@ map.simple <- map.simple + expand_limits(x=us$long, y =us$lat)
 map.simple <- map.simple + coord_map() + ggtitle("Basic Map of continental USA")
 
 "Create a color coded map, based on the area of the state"
-
 map.popColor <- ggplot(dfMerged, aes(map_id= state))
 
 
