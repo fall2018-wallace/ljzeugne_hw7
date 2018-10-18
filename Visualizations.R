@@ -29,7 +29,7 @@ map.popMurder <- map.popMurder + coord_map() + ggtitle("State Murderrate")
 newMerged <- dfMerged[dfMerged$x > -125, ]
 
 "Create Maps with circle in state center and circle sized based on population"
-map.popCircle <- map.simple + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population, fill="red"), shape = 1)
+map.popCircle <- map.simple + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population, color="red", fill="red"), shape = 1)
 
 "Create a Map of the North East with Circles based on population size"
 
@@ -41,7 +41,7 @@ map.northeast <- ggplot(newMerged, aes(map_id = state))
 map.northeast <- map.northeast + geom_map(map = us, fill="white", color="black")
 map.northeast <- map.northeast + expand_limits(x=us$long, y=us$lat)
 map.northeast <- map.northeast + coord_map() + ggtitle("Map of Northeast") + xlim(NYClat,-60) + ylim(NYClong,50)
-map.northeastcircle <- map.northeast + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population, color="red"), shape = 1)
+map.northeastcircle <- map.northeast + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population, color="red", fill="red"), shape = 1)
 
 
 
