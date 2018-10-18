@@ -31,4 +31,4 @@ newMerged <- dfMerged[dfMerged$x > -125, ]
 "Create Maps with circle in state center and circle sized based on population"
 map.popCircle <- map.simple + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population), shape = 1)
 
-"Create azoomed Map of the North East"
+"Create a Map of the North East"
