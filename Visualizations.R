@@ -4,7 +4,6 @@ library(ggmap)
 library(RColorBrewer)
 us <- map_data("state")
 dfMerged$state <- tolower(state.name)
-str(dfMerged)
 
 
 "Create a simple Map of the United States"
@@ -31,6 +30,10 @@ newMerged <- dfMerged[dfMerged$x > -125, ]
 "Create Maps with circle in state center and circle sized based on population"
 map.popCircle <- map.simple + geom_point(data=newMerged, aes(x=newMerged$x, y=newMerged$y, size=population, color="red", fill="red"), shape = 1)
 
+
+NY <- newMerged$state[30]
+NYClat <- newMerged$x[30]- 10
+NYClong <- newMerged$y[30]- 10
 "Create a Map of the North East with Circles based on population size"
 
 NY <- newMerged$state[30]
