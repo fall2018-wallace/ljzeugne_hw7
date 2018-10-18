@@ -86,6 +86,16 @@
             ],
             "source": "Visualizations.R",
             "target": "circle.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.northeast",
+                    "type": "png"
+                }
+            ],
+            "source": "Visualizations.R",
+            "target": "Northeast.png"
         }
     ],
     "nodes": [
@@ -131,6 +141,6 @@
             "name": "Northeast.png"
         }
     ],
-    "updated_at": "2018-10-18 02:00:19",
+    "updated_at": "2018-10-18 02:00:33",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
