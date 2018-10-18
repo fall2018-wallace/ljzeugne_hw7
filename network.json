@@ -96,6 +96,16 @@
             ],
             "source": "Visualizations.R",
             "target": "Northeast.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.popColor1",
+                    "type": "png"
+                }
+            ],
+            "source": "Visualizations.R",
+            "target": "northeastpop.png"
         }
     ],
     "nodes": [
@@ -144,6 +154,6 @@
             "name": "northeastpop.png"
         }
     ],
-    "updated_at": "2018-10-18 02:59:23",
+    "updated_at": "2018-10-18 02:59:34",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
