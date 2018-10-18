@@ -5,7 +5,6 @@ us <- map_data("state")
 dfMerged$state <- tolower(state.name)
 str(dfMerged)
 
-dfMerged <- dfMerged[dfMerged$x > -125,0]
 
 "Create a simple Map of the United States"
 map.simple <- ggplot(dfMerged, aes(map_id = state))
