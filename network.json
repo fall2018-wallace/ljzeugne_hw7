@@ -56,6 +56,16 @@
             ],
             "source": "Visualizations.R",
             "target": "Map.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.popColor",
+                    "type": "png"
+                }
+            ],
+            "source": "Visualizations.R",
+            "target": "Population.png"
         }
     ],
     "nodes": [
@@ -92,6 +102,6 @@
             "name": "Population.png"
         }
     ],
-    "updated_at": "2018-10-18 01:16:43",
+    "updated_at": "2018-10-18 01:16:58",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
