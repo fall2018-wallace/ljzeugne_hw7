@@ -3,8 +3,7 @@ library(ggplot2)
 library(ggmap)
 us <- map_data("state")
 dfMerged$state <- tolower(state.name)
-dfMerged <- dfMerged[dfMerged$center$x > -125, ]
-str(dfMerged)
+
 
 map.simple <- ggplot(dfMerged, aes(map_id = state))
 map.simple <- map.simple + geom_map(map = us, fill="white", color="black")
