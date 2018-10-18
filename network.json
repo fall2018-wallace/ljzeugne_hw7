@@ -56,26 +56,6 @@
             ],
             "source": "Visualizations.R",
             "target": "Map.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "map.murder",
-                    "type": "png"
-                }
-            ],
-            "source": "Visualizations.R",
-            "target": "Murder.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "map.popCircle",
-                    "type": "png"
-                }
-            ],
-            "source": "Visualizations.R",
-            "target": "Circle.png"
         }
     ],
     "nodes": [
@@ -110,11 +90,8 @@
         },
         {
             "name": "Murder.png"
-        },
-        {
-            "name": "Circle.png"
         }
     ],
-    "updated_at": "2018-10-18 01:01:52",
+    "updated_at": "2018-10-18 01:02:00",
     "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
 }
