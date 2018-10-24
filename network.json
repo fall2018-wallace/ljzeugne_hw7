@@ -1,0 +1,172 @@
+{
+    "collaborators": [
+        "ljzeugne"
+    ],
+    "created_at": "2018-10-17 16:00:24",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "scprc_est_2017_18_pop_res.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "census",
+                    "output": "cleanCensus",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "MergedArrest.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "dfMerged",
+                    "output": "dfMerged",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "MergedArrest.R",
+            "target": "ExpandDataframe.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "dfMerged",
+                    "output": "dfMerged",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "ExpandDataframe.R",
+            "target": "Visualizations.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.simple",
+                    "type": "png"
+                }
+            ],
+            "source": "Visualizations.R",
+            "target": "Map.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.popColor",
+                    "type": "png"
+                }
+            ],
+            "source": "Visualizations.R",
+            "target": "Population.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.popMurder",
+                    "type": "png"
+                }
+            ],
+            "source": "Visualizations.R",
+            "target": "Murder.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.popCircle",
+                    "type": "png"
+                }
+            ],
+            "source": "Visualizations.R",
+            "target": "circle.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.northeastcircle",
+                    "type": "png"
+                }
+            ],
+            "source": "Visualizations.R",
+            "target": "Northeast.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.popColor1",
+                    "type": "png"
+                }
+            ],
+            "source": "Visualizations.R",
+            "target": "northeastpop.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.popmurder1",
+                    "type": "png"
+                }
+            ],
+            "source": "Visualizations.R",
+            "target": "northeastmurder.png"
+        }
+    ],
+    "nodes": [
+        {
+            "assigned_to": "ljzeugne",
+            "name": "clean.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "scprc_est_2017_18_pop_res.csv"
+        },
+        {
+            "assigned_to": "ljzeugne",
+            "desc": "",
+            "name": "MergedArrest.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "ljzeugne",
+            "desc": "",
+            "name": "ExpandDataframe.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "ljzeugne",
+            "desc": "",
+            "name": "Visualizations.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "Map.png"
+        },
+        {
+            "name": "Population.png"
+        },
+        {
+            "name": "Murder.png"
+        },
+        {
+            "name": "circle.png"
+        },
+        {
+            "name": "Northeast.png"
+        },
+        {
+            "name": "northeastpop.png"
+        },
+        {
+            "name": "northeastmurder.png"
+        }
+    ],
+    "updated_at": "2018-10-18 03:01:22",
+    "url": "https://github.com/fall2018-wallace/ljzeugne_hw7"
+}
